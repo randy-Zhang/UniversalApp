@@ -1,0 +1,38 @@
+platform :ios, '8.0'
+
+target 'UniversalApp' do
+
+# 去掉由pod引入的第三方库的警告，需要更新命令才生效
+inhibit_all_warnings!
+
+pod 'MJRefresh'
+pod 'AFNetworking'
+pod 'YYKit'
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'SDAutoLayout'
+pod 'SDCycleScrollView'
+#键盘监测
+pod 'TPKeyboardAvoiding'
+#自定义提示框
+pod 'Toast', '~> 3.1.0'
+#网络或本地 多张图片浏览 控制器
+#pod 'MWPhotoBrowser'
+#搜索框架
+#pod 'PYPhotoBrowser'
+#网易新闻页面类型
+#pod 'WMPageController'
+
+# U-Share SDK UI模块（分享面板，建议添加）
+pod 'UMengUShare/UI'
+
+# 集成微信(精简版0.2M)
+pod 'UMengUShare/Social/ReducedWeChat'
+
+# 集成QQ/QZone/TIM(精简版0.5M)
+pod 'UMengUShare/Social/ReducedQQ'
+
+# 集成新浪微博(精简版1M)
+pod 'UMengUShare/Social/ReducedSina'
+
+end
